@@ -11,5 +11,6 @@ response=`curl -d "$params" ${url} | egrep "<td>(2[0-9]+:[0-9]+)"`
 if [[ ! -z ${response} ]]; then
  ruby sendmail.rb $1 $2 "${url}?${params}"
 else
+  touch log.txt
   echo "$now : nao tem" >> log.txt 
 fi
