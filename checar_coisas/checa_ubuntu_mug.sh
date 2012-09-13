@@ -3,7 +3,7 @@
 # Checar se Caneca Ubuntu se encontra disponivel na loja da CANONICAL
 #
 
-. funcoes.sh $1 $2
+. ./funcoes.sh $1 $2
 
 url="http://shop.canonical.com/product_info.php"
 params="?products_id=828"
