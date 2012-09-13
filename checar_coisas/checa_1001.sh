@@ -5,7 +5,7 @@
 
 if [ ! -f "./stop" ]; then
 
-  . funcoes.sh $1 $2
+  . ./funcoes.sh $1 $2
 
   url="https://vendas.autoviacao1001.com.br/perl/br5.cgi"
   params="ida=soloida&txt_desde=521&txt_hasta=359&fecha=120921"
